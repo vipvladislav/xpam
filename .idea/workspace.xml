@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b7551c35-4f91-479c-ab3e-7e75ff4b6398" name="Default Changelist" comment="symfony 4.4 add docker, public, template">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/xpam.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/console" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/phpunit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/bootstrap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/cache.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/dev/debug.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/dev/monolog.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/dev/web_profiler.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/doctrine_migrations.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/framework.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/mailer.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/prod/deprecations.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/prod/doctrine.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/prod/monolog.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/prod/routing.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/routing.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/sensio_framework_extra.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/test/framework.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/test/monolog.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/test/twig.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/test/validator.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/test/web_profiler.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/translation.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/validator.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/preload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/routes/annotations.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/routes/dev/framework.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/routes/dev/web_profiler.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/auto.cnf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/ca-key.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/ca.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/client-cert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/client-key.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/ib_buffer_pool" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/ib_logfile0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/ib_logfile1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/ibdata1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/ibtmp1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/columns_priv.MYD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/columns_priv.MYI" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/columns_priv.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/db.MYD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/db.MYI" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/db.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/db.opt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/engine_cost.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/engine_cost.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/event.MYD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/event.MYI" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/event.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/func.MYD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/func.MYI" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/func.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/general_log.CSM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/general_log.CSV" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/general_log.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/gtid_executed.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/gtid_executed.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/help_category.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/help_category.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/help_keyword.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/help_keyword.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/help_relation.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/help_relation.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/help_topic.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/help_topic.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/innodb_index_stats.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/innodb_index_stats.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/innodb_table_stats.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/innodb_table_stats.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/ndb_binlog_index.MYD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/ndb_binlog_index.MYI" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/ndb_binlog_index.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/plugin.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/plugin.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/proc.MYD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/proc.MYI" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/proc.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/procs_priv.MYD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/procs_priv.MYI" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/procs_priv.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/proxies_priv.MYD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/proxies_priv.MYI" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/proxies_priv.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/server_cost.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/server_cost.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/servers.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/servers.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/slave_master_info.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/slave_master_info.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/slave_relay_log_info.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/slave_relay_log_info.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/slave_worker_info.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/slave_worker_info.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/slow_log.CSM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/slow_log.CSV" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/slow_log.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/tables_priv.MYD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/tables_priv.MYI" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/tables_priv.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/time_zone.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/time_zone.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/time_zone_leap_second.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/time_zone_leap_second.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/time_zone_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/time_zone_name.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/time_zone_transition.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/time_zone_transition.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/time_zone_transition_type.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/time_zone_transition_type.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/user.MYD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/user.MYI" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/user.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/accounts.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/cond_instances.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/db.opt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_stages_current.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_stages_history.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_stages_history_long.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_stages_summary_by_account_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_stages_summary_by_host_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_stages_summary_by_thread_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_stages_summary_by_user_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_stages_summary_global_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_statements_current.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_statements_history.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_statements_history_long.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_statements_summary_by_account_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_statements_summary_by_digest.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_statements_summary_by_host_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_statements_summary_by_program.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_statements_summary_by_thread_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_statements_summary_by_user_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_statements_summary_global_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_transactions_current.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_transactions_history.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_transactions_history_long.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_transactions_summary_by_account_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_transactions_summary_by_host_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_transactions_summary_by_thread_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_transactions_summary_by_user_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_transactions_summary_global_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_waits_current.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_waits_history.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_waits_history_long.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_waits_summary_by_account_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_waits_summary_by_host_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_waits_summary_by_instance.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_waits_summary_by_thread_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_waits_summary_by_user_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_waits_summary_global_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/file_instances.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/file_summary_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/file_summary_by_instance.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/global_status.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/global_variables.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/host_cache.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/hosts.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/memory_summary_by_account_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/memory_summary_by_host_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/memory_summary_by_thread_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/memory_summary_by_user_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/memory_summary_global_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/metadata_locks.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/mutex_instances.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/objects_summary_global_by_type.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/performance_timers.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/prepared_statements_instances.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/replication_applier_configuration.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/replication_applier_status.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/replication_applier_status_by_coordinator.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/replication_applier_status_by_worker.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/replication_connection_configuration.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/replication_connection_status.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/replication_group_member_stats.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/replication_group_members.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/rwlock_instances.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/session_account_connect_attrs.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/session_connect_attrs.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/session_status.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/session_variables.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/setup_actors.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/setup_consumers.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/setup_instruments.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/setup_objects.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/setup_timers.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/socket_instances.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/socket_summary_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/socket_summary_by_instance.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/status_by_account.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/status_by_host.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/status_by_thread.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/status_by_user.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/table_handles.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/table_io_waits_summary_by_index_usage.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/table_io_waits_summary_by_table.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/table_lock_waits_summary_by_table.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/threads.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/user_variables_by_thread.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/users.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/variables_by_thread.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/private_key.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/public_key.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/server-cert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/server-key.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/db.opt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/host_summary.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/host_summary_by_file_io.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/host_summary_by_file_io_type.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/host_summary_by_stages.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/host_summary_by_statement_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/host_summary_by_statement_type.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/innodb_buffer_stats_by_schema.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/innodb_buffer_stats_by_table.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/innodb_lock_waits.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/io_by_thread_by_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/io_global_by_file_by_bytes.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/io_global_by_file_by_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/io_global_by_wait_by_bytes.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/io_global_by_wait_by_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/latest_file_io.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/memory_by_host_by_current_bytes.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/memory_by_thread_by_current_bytes.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/memory_by_user_by_current_bytes.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/memory_global_by_current_bytes.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/memory_global_total.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/metrics.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/processlist.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/ps_check_lost_instrumentation.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/schema_auto_increment_columns.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/schema_index_statistics.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/schema_object_overview.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/schema_redundant_indexes.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/schema_table_lock_waits.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/schema_table_statistics.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/schema_table_statistics_with_buffer.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/schema_tables_with_full_table_scans.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/schema_unused_indexes.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/session.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/session_ssl_status.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/statement_analysis.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/statements_with_errors_or_warnings.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/statements_with_full_table_scans.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/statements_with_runtimes_in_95th_percentile.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/statements_with_sorting.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/statements_with_temp_tables.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/sys_config.TRG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/sys_config.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/sys_config.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/sys_config_insert_set_user.TRN" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/sys_config_update_set_user.TRN" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/user_summary.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/user_summary_by_file_io.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/user_summary_by_file_io_type.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/user_summary_by_stages.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/user_summary_by_statement_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/user_summary_by_statement_type.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/version.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/wait_classes_global_by_avg_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/wait_classes_global_by_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/waits_by_host_by_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/waits_by_user_by_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/waits_global_by_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024host_summary.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024host_summary_by_file_io.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024host_summary_by_file_io_type.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024host_summary_by_stages.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024host_summary_by_statement_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024host_summary_by_statement_type.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024innodb_buffer_stats_by_schema.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024innodb_buffer_stats_by_table.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024innodb_lock_waits.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024io_by_thread_by_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024io_global_by_file_by_bytes.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024io_global_by_file_by_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024io_global_by_wait_by_bytes.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024io_global_by_wait_by_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024latest_file_io.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024memory_by_host_by_current_bytes.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024memory_by_thread_by_current_bytes.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024memory_by_user_by_current_bytes.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024memory_global_by_current_bytes.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024memory_global_total.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024processlist.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024ps_digest_95th_percentile_by_avg_us.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024ps_digest_avg_latency_distribution.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024ps_schema_table_statistics_io.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024schema_flattened_keys.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024schema_index_statistics.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024schema_table_lock_waits.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024schema_table_statistics.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024schema_table_statistics_with_buffer.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024schema_tables_with_full_table_scans.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024session.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024statement_analysis.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024statements_with_errors_or_warnings.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024statements_with_full_table_scans.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024statements_with_runtimes_in_95th_percentile.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024statements_with_sorting.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024statements_with_temp_tables.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024user_summary.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024user_summary_by_file_io.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024user_summary_by_file_io_type.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024user_summary_by_stages.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024user_summary_by_statement_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024user_summary_by_statement_type.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024wait_classes_global_by_avg_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024wait_classes_global_by_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024waits_by_host_by_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024waits_by_user_by_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/sys/x@0024waits_global_by_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/data/mysql/test1/db.opt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/Untitled-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/arrow_l.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/arrow_r.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blog.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blog_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blog_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blog_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/causes_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/causes_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/causes_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/causes_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/church_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/church_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/church_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/church_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/church_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/church_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/church_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/contact.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/contact_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/cross_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/elements.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/featured_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/featured_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/home_slider_background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icon_box_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icon_box_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icon_box_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/intro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/latest_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/latest_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/latest_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/latest_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/logo_large.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/marker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/ministries.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/ministries_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/ministries_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/ministries_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/ministries_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/ministries_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/ministries_6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/news_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/news_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/news_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pastor_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pastor_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pastor_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pastor_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/09572078.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/1024px-1._Комплекс_споруд_Свято-Духівського_Скиту_Свято-Успенської_Лаври.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/1024px-3._Комплекс_споруд_Свято-Духівського_Скиту_Свято-Успенської_Лаври.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/1024px-3._Успенський_собор_Почаївської_лаври.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/1024px-4._Комплекс_споруд_Свято-Духівського_Скиту_Свято-Успенської_Лаври.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/1024px-5._Комплекс_споруд_Свято-Духівського_Скиту_Свято-Успенської_Лаври.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/1024px-PochaevBelltower.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/1024px-Pochayiv_13.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/1024px-Pochayiv_16.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/1024px-Pochayiv_17.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/1024px-Почаевская_лавра._Духовная_семинария..jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/1024px-Почаевская_лавра._Летний_алтарь..jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/1024px-Почаевская_лавра._Троицкий_собор..jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/1024px-Почаевская_лавра._Храм_Иова_Почаевского..jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/1024px-Почаевская_лавра._Церковь_Великомученицы_Варвары..jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/1024px-Украина_-_Почаевская_Лавра_50.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/1031184_800x600_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/183022.b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/800px-1._Успенський_собор_Почаївської_лаври.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/800px-Дзвіниця_1861р.,_Свято-Успенська_Почаївська_Лавра,_м.Почаїв.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/800px-Троицкий_собор_Почаевской_Лавры.Интерьер-1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/Jov.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/Lr65zpB.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/Lr65zpBzkUXT9VKax3T3g-EfPg7jYGAo_O3oBChEj38oAL9TQOBI5W1Y-WegleXl-rGavjCkqYC-aYYZfTk6I77Nm4xl8aJd4JXx81hrxv4.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/Lr65zpBzkUXT9VKax3T3g-EfPg7jYGAo_O3oBChEj38oAL9TQOBI5W1Y-WegleXlieFAB0duNADyZUrKlA9-0nuZAar2O7q0gCWZoqSLtxU.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/Lr65zpBzkUXT9VKax3T3gwgogZj_9RemJiFBPfzuNNCedSwyPfTJagFZ1OaQBKWVr8ZlOCQS7J4Zur2MPJoiEhGLW94BUulRl1InLU7vbJuu5F6vOk-gQneW0tlDVlxE.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/Lr65zpBzkUXT9VKax3T3gwgogZj_9RemJiFBPfzuNNCedSwyPfTJagFZ1OaQBKWVr8ZlOCQS7J4Zur2MPJoiEmQXzIddbJcuBKB3QSSQ8gxofh941w2MIGllzxWCc3lZ.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/Lr65zpBzkUXT9VKax3T3gwgogZj_9RemJiFBPfzuNNCedSwyPfTJagFZ1OaQBKWVr8ZlOCQS7J4Zur2MPJoiEoxJWqNP3gwjh6_M19fSG0MWCalOPPTWavIf8g_1UdV7.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/Lr65zpBzkUXT9VKax3T3gwgogZj_9RemJiFBPfzuNNCedSwyPfTJagFZ1OaQBKWVr8ZlOCQS7J4Zur2MPJoiEsbrASgbC33NCq5G6PuBPB8DB2Oqr4eQ14lozcwgDvwq.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/Lr65zpBzkUXT9VKax3T3gwgogZj_9RemJiFBPfzuNNCedSwyPfTJagFZ1OaQBKWVr8ZlOCQS7J4Zur2MPJoiEtZbCyxJqWU_aDT2ZtUsDWpy-ZsGVT9XmI1l4NTurhZL.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/Pochaev-wall.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/PochaevChapel400.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/Pochaiv_Monastery_2_BR.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/Pochaiv_Monastery_6_BR.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/Pochayiv_15.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/Pochayiv_22.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/Počajiv,_Lavra_09.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/lJZcHk_600w_350h.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/plan2-840.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/usp_soboor6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/Багародзіца_Пачаеўская_з_цудамі._2-я_пал._XVIII_ст.,_Валынь.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/Дзвіниця._Почаївська_лавра_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/Мефодій_Почаївський.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/Почаевская_Лавра-10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/Почаевская_Лавра-16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/Почаевская_икона_Божией_Матери_из_собрания_ДОХМ.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/Почаївська_Лавра-26.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pochaev/Снимок.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/popular_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/popular_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/popular_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/popular_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/quote.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/quote_char.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/sermon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/sermon_1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/sermon_2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/sermon_3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/sermon_4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/sermon_5.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/sermon_6.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/sermon_big.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/sermon_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/sermon_pastor.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/sermon_single.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/sermon_small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/sermons.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/services.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/services_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/services_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/services_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/services_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/services_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/services_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/sidebar_quote.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tab.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/0097-e1410790363748-300x271.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/061215.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/07.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/09.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/1.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/10. 2006г установка купола.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/11.  2006г установка купола.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/13.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/14. о.Алексей 2013г.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/15.   2014г  Работа над иконостасом.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/15697756_1865555590356189_2423966534624312527_n.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/2003г (1) о.Стефан в храме.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/2003г о.Стефан в храме.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/2003г храм до реконструкции (2).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/2003г храм до реконструкции (3).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/20130809_110959.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/20160103_122422.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/20160103_122433.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/5 (1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/5.  2006г реконструкция.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/6.  2006г реконструкция.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/61215.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/7 (1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/7.  2006г храм реконструкция.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/8.  2006г реконструкция.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/9. 2006г  реконструкция.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/CSWnqZCefxk.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/DSCN2713.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/DSCN2717.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/DSCN2717_thumb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/FB_IMG_1479550437388.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/FB_IMG_1479550441127.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/IMG-7fe9a6008af1f51571357b363f593a4f-V.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/IMG_1004.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/IMG_1320.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/IMG_4941.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/IMG_5126.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/IMG_5128.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/IMG_5129.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/IMG_5133.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/IMG_5137.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/IMG_5139.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/aleks.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/dzYKROWLVUU.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/ikona xrama.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/image-76112c87e7ad4c49096832cab410870ca82398905807a6f9b45125411cd0fc1a-V.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/jA8UHGJHemQ.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/kak-dolzhen-vyglyadet-natelnyj-krestik.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/logo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/logo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/logouu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/onufri.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/pro xram.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/restavratsiya-khrama_sergey-pyatakov1-600x403.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/silvestr.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xpam/vladis.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/blog_custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/contact_custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/elements_custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery-3.2.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/ministries_custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/popper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/sermon_single_custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/sermons_custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/OwlCarousel2-2.2.1/ajax-loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/OwlCarousel2-2.2.1/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/OwlCarousel2-2.2.1/owl.carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/OwlCarousel2-2.2.1/owl.carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/OwlCarousel2-2.2.1/owl.theme.default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/OwlCarousel2-2.2.1/owl.video.play.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/easing/easing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/HELP-US-OUT.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/less/animated.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/less/bordered-pulled.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/less/core.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/less/fixed-width.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/less/font-awesome.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/less/icons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/less/larger.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/less/list.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/less/mixins.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/less/path.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/less/rotated-flipped.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/less/screen-reader.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/less/stacked.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/less/variables.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/scss/_animated.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/scss/_core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/scss/_fixed-width.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/scss/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/scss/_larger.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/scss/_list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/scss/_path.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/scss/_screen-reader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/scss/_stacked.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/font-awesome-4.7.0/scss/font-awesome.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/greensock/ScrollToPlugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/greensock/TimelineMax.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/greensock/TweenMax.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/greensock/animation.gsap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/parallax-js-master/parallax.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/progressbar/progressbar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/scrollmagic/ScrollMagic.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/styles/blog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/styles/blog_responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/styles/bootstrap4/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/styles/bootstrap4/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/styles/bootstrap4/popper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/styles/contact.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/styles/contact_responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/styles/elements.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/styles/elements_responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/styles/main_styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/styles/ministries.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/styles/ministries_responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/styles/responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/styles/sermon_single.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/styles/sermon_single_responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/styles/sermons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/styles/sermons_responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Kernel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/lucky/article_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/lucky/blog.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/lucky/contact.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/lucky/elements.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/lucky/footer.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/lucky/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/lucky/liturgy.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/lucky/liturgy_singl.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/lucky/logo.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/lucky/menu.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/lucky/news.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/lucky/top_bar_donat.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/bootstrap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/translations/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="php" />
+  <component name="ProjectId" id="1k5oQpn0jlb4tF247TZ9qkBU0em" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="Docker" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/docker" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b7551c35-4f91-479c-ab3e-7e75ff4b6398" name="Default Changelist" comment="" />
+      <created>1604999799204</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604999799204</updated>
+      <workItem from="1604999800609" duration="2331000" />
+    </task>
+    <task id="LOCAL-00001" summary="symfony 4.4 add docker, public, template">
+      <created>1605002019035</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605002019035</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="symfony 4.4 add docker, public, template" />
+    <option name="LAST_COMMIT_MESSAGE" value="symfony 4.4 add docker, public, template" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="439" y="110" width="1030" height="855" key="#CLI_Interpreters" timestamp="1605002384937">
+      <screen x="0" y="34" width="1920" height="994" />
+    </state>
+    <state x="439" y="110" width="1030" height="855" key="#CLI_Interpreters/0.34.1920.994@0.34.1920.994" timestamp="1605002384937" />
+    <state x="1091" y="335" width="690" height="438" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604999897521">
+      <screen x="0" y="34" width="1920" height="994" />
+    </state>
+    <state x="1091" y="335" width="690" height="438" key="#com.intellij.fileTypes.FileTypeChooser/0.34.1920.994@0.34.1920.994" timestamp="1604999897521" />
+    <state x="407" y="34" width="1096" height="994" key="CommitChangelistDialog2" timestamp="1605002191546">
+      <screen x="0" y="34" width="1920" height="994" />
+    </state>
+    <state x="407" y="34" width="1096" height="994" key="CommitChangelistDialog2/0.34.1920.994@0.34.1920.994" timestamp="1605002191546" />
+    <state x="1171" y="252" width="530" height="605" key="FileChooserDialogImpl" timestamp="1604999846960">
+      <screen x="0" y="34" width="1920" height="994" />
+    </state>
+    <state x="1171" y="252" width="530" height="605" key="FileChooserDialogImpl/0.34.1920.994@0.34.1920.994" timestamp="1604999846960" />
+    <state x="324" y="78" width="1271" height="912" key="SettingsEditor" timestamp="1605002441759">
+      <screen x="0" y="34" width="1920" height="994" />
+    </state>
+    <state x="324" y="78" width="1271" height="912" key="SettingsEditor/0.34.1920.994@0.34.1920.994" timestamp="1605002441759" />
+    <state x="455" y="204" width="1000" height="661" key="Vcs.Push.Dialog.v2" timestamp="1605002032344">
+      <screen x="0" y="34" width="1920" height="994" />
+    </state>
+    <state x="455" y="204" width="1000" height="661" key="Vcs.Push.Dialog.v2/0.34.1920.994@0.34.1920.994" timestamp="1605002032344" />
+  </component>
+</project>
