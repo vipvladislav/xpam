@@ -4,6 +4,9 @@ namespace App\Controller;
 //use App\Entity\Article;
 //use App\Entity\Category;
 //use App\Form\ArticleType;
+use App\Entity\Article;
+use App\Entity\Category;
+use App\Form\ArticleType;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -73,91 +76,91 @@ class DefaultController extends AbstractController
         return $this->render(/** @lang text */ 'lucky/contact.html.twig', []);
     }
 
-//    /**
-//     * @Route(path="/add-article", name="add-article")
-//     * @param EntityManagerInterface $entityManager
-//     * @param Request $request
-//     * @return Response
-//     */
-//    public function next(EntityManagerInterface $entityManager, Request $request)
-//    {
-//        $category = new Category();
-//        $category->setTitle('aaaaaaa');
-//
-//        $article = new Article();
-//
-//        $form = $this->createForm(ArticleType::class, $article, ['method' => $request->getMethod()]);
-//
-//        $form->handleRequest($request);
-//
-//        if ($form->isSubmitted() && $form->isValid()) {
-//             $entityManager->persist($article);
-//             $entityManager->flush();
-//
-//            $this->addFlash('success', 'Done!');
-//            return $this->redirect('add-article');
-//        }
-//
-//        return $this->render('lucky/article_form.html.twig', [
-//            'articleForm' => $form->createView(),
-//        ]);
-//    }
-//
-//    /**
-//     * @Route(path="/articles/{id}", name="edit-article")
-//     * @param Article $article
-//     * @param EntityManagerInterface $entityManager
-//     * @return Response
-//     */
-//    public function editArticle(Article $article, EntityManagerInterface $entityManager, Request $request)
-//    {
-//        $form = $this->createForm(
-//            ArticleType::class,
-//            $article,
-//            ['method' => $request->getMethod()]
-//        );
-//
-//        $form->handleRequest($request);
-//
-//        if ($form->isSubmitted() && $form->isValid()) {
-//            $entityManager->flush();
-//
-//            $this->addFlash('success', 'Done!');
-//            return $this->redirectToRoute('edit-article', ['id' => $article->getId() ]);
-//        }
-//
-//        return $this->render('lucky/article_form.html.twig', [
-//            'articleForm' => $form->createView(),
-//        ]);
-//    }
-//
-//    /**
-//     * @Route(path="/articles/delete/{id}")
-//     * @param Article $article
-//     * @param EntityManagerInterface $entityManager
-//     * @return Response
-//     */
-//    public function deleteArticle(Article $article, EntityManagerInterface $entityManager)
-//    {
-//        $entityManager->remove($article);
-//        $entityManager->flush();
-//
-//        return new Response('Deleted');
-//    }
-//
-//    /**
-//     * @Route(path="/list")
-//     * @param EntityManagerInterface $entityManager
-//     * @return Response
-//     */
-//    public function list(EntityManagerInterface $entityManager)
-//    {
-//        $articleRepo = $entityManager->getRepository(Article::class);
-//        $articles = $articleRepo->findAll();
-//
-//        dd($articleRepo->findByCategoryId(2));
-//
-//        return new Response('List!');
-//    }
-//
+    /**
+     * @Route(path="/add-article", name="add-article")
+     * @param EntityManagerInterface $entityManager
+     * @param Request $request
+     * @return Response
+     */
+    public function next(EntityManagerInterface $entityManager, Request $request)
+    {
+        $category = new Category();
+        $category->setTitle('aaaaaaa');
+
+        $article = new Article();
+
+        $form = $this->createForm(ArticleType::class, $article, ['method' => $request->getMethod()]);
+
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+             $entityManager->persist($article);
+             $entityManager->flush();
+            $this->addFlash('success', 'Done!');
+            return $this->redirect('add-article');
+        }
+
+        return $this->render('lucky/article_form.html.twig', [
+            'articleForm' => $form->createView(),
+        ]);
+    }
+
+    /**
+     * @Route(path="/articles/{id}", name="edit-article")
+     * @param Article $article
+     * @param EntityManagerInterface $entityManager
+     * @param Request $request
+     * @return Response
+     */
+
+    public function editArticle(Article $article, EntityManagerInterface $entityManager, Request $request)
+    {
+        $form = $this->createForm(
+            ArticleType::class,
+            $article,
+            ['method' => $request->getMethod()]
+        );
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $entityManager->flush();
+
+            $this->addFlash('success', 'Done!');
+            return $this->redirectToRoute('edit-article', ['id' => $article->getId() ]);
+        }
+
+        return $this->render('lucky/article_form.html.twig', [
+            'articleForm' => $form->createView(),
+        ]);
+    }
+
+    /**
+     * @Route(path="/articles/delete/{id}")
+     * @param Article $article
+     * @param EntityManagerInterface $entityManager
+     * @return Response
+     */
+    public function deleteArticle(Article $article, EntityManagerInterface $entityManager)
+    {
+        $entityManager->remove($article);
+        $entityManager->flush();
+
+        return new Response('Deleted');
+    }
+
+    /**
+     * @Route(path="/list")
+     * @param EntityManagerInterface $entityManager
+     * @return Response
+     */
+    public function list(EntityManagerInterface $entityManager)
+    {
+        $articleRepo = $entityManager->getRepository(Article::class);
+        $articles = $articleRepo->findAll();
+
+        dd($articleRepo->findByCategoryId(2));
+
+        return new Response('List!');
+    }
+
 }
