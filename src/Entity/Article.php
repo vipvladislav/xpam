@@ -41,6 +41,16 @@ class Article
      */
     private $categories;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $description;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $sacraments;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -90,6 +100,30 @@ class Article
     public function setCategories(?Category $categories): self
     {
         $this->categories = $categories;
+
+        return $this;
+    }
+
+    public function getDescription(): ?string
+    {
+        return $this->description;
+    }
+
+    public function setDescription(string $description): self
+    {
+        $this->description = $description;
+
+        return $this;
+    }
+
+    public function getSacraments(): ?string
+    {
+        return $this->sacraments;
+    }
+
+    public function setSacraments(string $sacraments): self
+    {
+        $this->sacraments = $sacraments;
 
         return $this;
     }

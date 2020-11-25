@@ -7,6 +7,7 @@ namespace App\Controller;
 use App\Entity\Article;
 use App\Entity\Category;
 use App\Form\ArticleType;
+use App\Repository\ArticleRepository;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -38,25 +39,41 @@ class DefaultController extends AbstractController
 
     /**
      * @Route("/news", name="news")
+     * @param ArticleRepository $articleRepository
      * @return Response
      */
-    public function news()
+    public function news(ArticleRepository $articleRepository)
     {
-        return $this->render('lucky/news.html.twig', []);
+        $articles = $articleRepository->findAll();
+        return $this->render('lucky/news.html.twig', [
+            'articles' => $articles
+        ]);
     }
 
     /**
-     * @Route("/{aaa}/liturgy_singl.html.twig", name="liturgy_singl.html.twig")
-     * @param $aaa
+     * @Route("/liturgy_singl.html.twig/{id}", name="liturgy_singl")
+     * @param Article $article
      * @return Response
      */
-    public function liturgySingl($aaa)
-    {
-        $result =  $this->render(/** @lang text */ 'lucky/liturgy_singl.html.twig', ['number' => $aaa]);
-        $this->addFlash('success', $aaa);
 
-        return $result;
+    public function liturgySingle(Article $article)
+    {
+        return $this->render('lucky/liturgy_singl.html.twig', [
+            'article' => $article
+        ]);
+
     }
+//    public function liturgySingl(Article $article, EntityManagerInterface $entityManager, Request $request)
+//    {
+//        {
+////            $result =
+//            $this->render(/** @lang text */ 'lucky/liturgy_singl.html.twig', ['number' => 'id']);
+////            $this->addFlash('success', 'id');
+//
+//            return $this->redirectToRoute('liturgy_singl', ['id' => $article->getId()]);
+////            return $result;
+//        }
+//    }
 
     /**
      * @Route("/liturgy", name="liturgy")
@@ -84,8 +101,8 @@ class DefaultController extends AbstractController
      */
     public function next(EntityManagerInterface $entityManager, Request $request)
     {
-        $category = new Category();
-        $category->setTitle('aaaaaaa');
+//        $category = new Category();
+//        $category->setTitle('aaaaaaa');
 
         $article = new Article();
 
@@ -126,8 +143,9 @@ class DefaultController extends AbstractController
             $entityManager->flush();
 
             $this->addFlash('success', 'Done!');
-            return $this->redirectToRoute('edit-article', ['id' => $article->getId() ]);
+            return $this->redirectToRoute('edit-article', ['id' => $article->getId()]);
         }
+
 
         return $this->render('lucky/article_form.html.twig', [
             'articleForm' => $form->createView(),
@@ -158,7 +176,7 @@ class DefaultController extends AbstractController
         $articleRepo = $entityManager->getRepository(Article::class);
         $articles = $articleRepo->findAll();
 
-        dd($articleRepo->findByCategoryId(2));
+//        dd($articleRepo->findByCategoryId(2));
 
         return new Response('List!');
     }

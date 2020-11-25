@@ -2,21 +2,185 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7551c35-4f91-479c-ab3e-7e75ff4b6398" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/vladislav.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/data/mysql/xram/category.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/data/mysql/xram/category.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201110134359.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/ArticleType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/CategoryRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20201125195634.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20201125203505.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Factory/ArticleFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Factory/CategoryFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/.idea/church.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/blog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/elements.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/Untitled-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/arrow_l.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/arrow_r.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/blog.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/blog_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/blog_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/blog_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/causes_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/causes_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/causes_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/causes_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/church_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/church_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/church_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/church_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/church_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/church_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/church_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/contact.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/contact_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/cross_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/elements.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/featured_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/featured_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/home_slider_background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/icon_box_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/icon_box_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/icon_box_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/intro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/latest_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/latest_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/latest_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/latest_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/logo_large.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/marker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/ministries.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/ministries_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/ministries_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/ministries_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/ministries_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/ministries_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/ministries_6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/news_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/news_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/news_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/pastor_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/pastor_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/pastor_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/pastor_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/popular_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/popular_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/popular_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/popular_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/quote.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/quote_char.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/sermon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/sermon_1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/sermon_2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/sermon_3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/sermon_4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/sermon_5.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/sermon_6.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/sermon_big.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/sermon_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/sermon_pastor.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/sermon_single.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/sermon_small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/sermons.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/services.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/services_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/services_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/services_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/services_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/services_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/services_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/sidebar_quote.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/images/tab.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/js/blog_custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/js/contact_custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/js/custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/js/elements_custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/js/jquery-3.2.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/js/ministries_custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/js/sermon_single_custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/js/sermons_custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/ministries.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/OwlCarousel2-2.2.1/ajax-loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/OwlCarousel2-2.2.1/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/OwlCarousel2-2.2.1/owl.carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/OwlCarousel2-2.2.1/owl.carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/OwlCarousel2-2.2.1/owl.theme.default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/OwlCarousel2-2.2.1/owl.video.play.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/easing/easing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/HELP-US-OUT.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/less/animated.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/less/bordered-pulled.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/less/core.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/less/fixed-width.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/less/font-awesome.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/less/icons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/less/larger.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/less/list.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/less/mixins.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/less/path.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/less/rotated-flipped.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/less/screen-reader.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/less/stacked.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/less/variables.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/scss/_animated.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/scss/_core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/scss/_fixed-width.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/scss/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/scss/_larger.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/scss/_list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/scss/_path.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/scss/_screen-reader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/scss/_stacked.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/font-awesome-4.7.0/scss/font-awesome.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/greensock/ScrollToPlugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/greensock/TimelineMax.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/greensock/TweenMax.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/greensock/animation.gsap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/parallax-js-master/parallax.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/progressbar/progressbar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/plugins/scrollmagic/ScrollMagic.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/sermon_single.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/sermons.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/styles/blog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/styles/blog_responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/styles/bootstrap4/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/styles/bootstrap4/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/styles/bootstrap4/popper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/styles/contact.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/styles/contact_responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/styles/elements.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/styles/elements_responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/styles/main_styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/styles/ministries.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/styles/ministries_responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/styles/responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/styles/sermon_single.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/styles/sermon_single_responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/styles/sermons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/church/styles/sermons_responsive.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/xpam.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/xpam.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/data/mysql/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/ib_buffer_pool" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/data/mysql/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/ib_logfile0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/data/mysql/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/ibdata1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/data/mysql/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/ibtmp1" afterDir="false" />
@@ -24,9 +188,16 @@
       <change beforePath="$PROJECT_DIR$/docker/data/mysql/mysql/innodb_table_stats.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/innodb_table_stats.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/data/mysql/xram/article.frm" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/xram/article.frm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/data/mysql/xram/article.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/xram/article.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/data/mysql/xram/category.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/xram/category.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/data/mysql/xram/doctrine_migration_versions.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/xram/doctrine_migration_versions.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DefaultController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/ArticleType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ArticleType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/lucky/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lucky/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/lucky/liturgy.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lucky/liturgy.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/lucky/liturgy_singl.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lucky/liturgy_singl.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/lucky/news.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lucky/news.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,6 +323,11 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
       <path value="$PROJECT_DIR$/vendor/symfony/flex" />
       <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/vendor/zenstruck/foundry" />
     </include_path>
   </component>
   <component name="ProjectId" id="1k5oQpn0jlb4tF247TZ9qkBU0em" />
@@ -168,7 +344,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/temp" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -182,15 +358,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/temp" />
       <recent name="$PROJECT_DIR$/src/Entity" />
       <recent name="$PROJECT_DIR$/src/Controller" />
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -210,7 +386,21 @@
       <workItem from="1605023229376" duration="1057000" />
       <workItem from="1605024343092" duration="754000" />
       <workItem from="1605025110242" duration="3379000" />
-      <workItem from="1605030010342" duration="3256000" />
+      <workItem from="1605030010342" duration="3380000" />
+      <workItem from="1605096525703" duration="105000" />
+      <workItem from="1605123415217" duration="654000" />
+      <workItem from="1605174224242" duration="600000" />
+      <workItem from="1605283135470" duration="11000" />
+      <workItem from="1605301390766" duration="268000" />
+      <workItem from="1605530031986" duration="605000" />
+      <workItem from="1605541998805" duration="850000" />
+      <workItem from="1605683600932" duration="4064000" />
+      <workItem from="1605801726491" duration="2546000" />
+      <workItem from="1606321021097" duration="6756000" />
+      <workItem from="1606328487357" duration="333000" />
+      <workItem from="1606329058612" duration="2259000" />
+      <workItem from="1606332317485" duration="5000" />
+      <workItem from="1606332607101" duration="7790000" />
     </task>
     <task id="LOCAL-00001" summary="symfony 4.4 add docker, public, template">
       <created>1605002019035</created>
@@ -233,7 +423,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605012943579</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add Forma &amp;&amp; Category">
+      <created>1605035726194</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605035726194</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,7 +440,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="symfony 4.4 add docker, public, template" />
     <MESSAGE value="add database" />
-    <option name="LAST_COMMIT_MESSAGE" value="add database" />
+    <MESSAGE value="add Forma &amp;&amp; Category" />
+    <MESSAGE value="add ArticleFactory, CategoryFactory, in db: description, sacraments, faker" />
+    <MESSAGE value="add ArticleFactory, CategoryFactory, in db: description, sacraments, faker, fixed DefaultController" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ArticleFactory, CategoryFactory, in db: description, sacraments, faker, fixed DefaultController" />
   </component>
   <component name="WindowStateProjectService">
     <state x="439" y="110" width="1030" height="855" key="#CLI_Interpreters" timestamp="1605024526947">
@@ -254,22 +454,26 @@
       <screen x="0" y="34" width="1920" height="994" />
     </state>
     <state x="1091" y="335" width="690" height="438" key="#com.intellij.fileTypes.FileTypeChooser/0.34.1920.994@0.34.1920.994" timestamp="1604999897521" />
+    <state x="636" y="334" width="637" height="400" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1605096604481">
+      <screen x="0" y="34" width="1920" height="994" />
+    </state>
+    <state x="636" y="334" width="637" height="400" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.34.1920.994@0.34.1920.994" timestamp="1605096604481" />
     <state x="879" y="202" width="468" height="704" key="#com.intellij.ide.util.MemberChooser" timestamp="1605019868129">
       <screen x="0" y="34" width="1920" height="994" />
     </state>
     <state x="879" y="202" width="468" height="704" key="#com.intellij.ide.util.MemberChooser/0.34.1920.994@0.34.1920.994" timestamp="1605019868129" />
-    <state x="513" y="34" width="1096" height="994" key="CommitChangelistDialog2" timestamp="1605012941963">
+    <state x="513" y="34" width="1096" height="994" key="CommitChangelistDialog2" timestamp="1606340787334">
       <screen x="0" y="34" width="1920" height="994" />
     </state>
-    <state x="513" y="34" width="1096" height="994" key="CommitChangelistDialog2/0.34.1920.994@0.34.1920.994" timestamp="1605012941963" />
+    <state x="513" y="34" width="1096" height="994" key="CommitChangelistDialog2/0.34.1920.994@0.34.1920.994" timestamp="1606340787334" />
     <state x="100" y="134" width="1720" height="794" key="DiffContextDialog" timestamp="1605017100666">
       <screen x="0" y="34" width="1920" height="994" />
     </state>
     <state x="100" y="134" width="1720" height="794" key="DiffContextDialog/0.34.1920.994@0.34.1920.994" timestamp="1605017100666" />
-    <state x="1171" y="252" width="530" height="605" key="FileChooserDialogImpl" timestamp="1605023363292">
+    <state x="1171" y="252" width="530" height="605" key="FileChooserDialogImpl" timestamp="1606330089249">
       <screen x="0" y="34" width="1920" height="994" />
     </state>
-    <state x="1171" y="252" width="530" height="605" key="FileChooserDialogImpl/0.34.1920.994@0.34.1920.994" timestamp="1605023363292" />
+    <state x="1171" y="252" width="530" height="605" key="FileChooserDialogImpl/0.34.1920.994@0.34.1920.994" timestamp="1606330089249" />
     <state x="1113" y="222" width="655" height="665" key="NewPhpClassDialog" timestamp="1605029770124">
       <screen x="0" y="34" width="1920" height="994" />
     </state>
@@ -278,22 +482,30 @@
       <screen x="0" y="34" width="1920" height="994" />
     </state>
     <state x="324" y="78" width="1271" height="912" key="SettingsEditor/0.34.1920.994@0.34.1920.994" timestamp="1605029985756" />
-    <state x="455" y="204" width="1000" height="661" key="Vcs.Push.Dialog.v2" timestamp="1605012945842">
+    <state x="455" y="204" width="1000" height="661" key="Vcs.Push.Dialog.v2" timestamp="1605035728776">
       <screen x="0" y="34" width="1920" height="994" />
     </state>
-    <state x="455" y="204" width="1000" height="661" key="Vcs.Push.Dialog.v2/0.34.1920.994@0.34.1920.994" timestamp="1605012945842" />
+    <state x="455" y="204" width="1000" height="661" key="Vcs.Push.Dialog.v2/0.34.1920.994@0.34.1920.994" timestamp="1605035728776" />
     <state x="100" y="134" width="1720" height="794" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1605022025185">
       <screen x="0" y="34" width="1920" height="994" />
     </state>
     <state x="100" y="134" width="1720" height="794" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.34.1920.994@0.34.1920.994" timestamp="1605022025185" />
-    <state x="1153" y="167" width="617" height="796" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1605029012457">
+    <state x="1153" y="167" width="577" height="824" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1606337993955">
       <screen x="0" y="34" width="1920" height="994" />
     </state>
-    <state x="1153" y="167" width="617" height="796" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.34.1920.994@0.34.1920.994" timestamp="1605029012457" />
+    <state x="1153" y="167" width="577" height="824" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.34.1920.994@0.34.1920.994" timestamp="1606337993955" />
+    <state x="540" y="237" key="run.anything.popup" timestamp="1606337022165">
+      <screen x="0" y="34" width="1920" height="994" />
+    </state>
+    <state x="540" y="237" key="run.anything.popup/0.34.1920.994@0.34.1920.994" timestamp="1606337022165" />
     <state x="1186" y="386" width="500" height="346" key="scopes" timestamp="1605030075870">
       <screen x="0" y="34" width="1920" height="994" />
     </state>
     <state x="1186" y="386" width="500" height="346" key="scopes/0.34.1920.994@0.34.1920.994" timestamp="1605030075870" />
+    <state x="540" y="34" width="840" height="992" key="search.everywhere.popup" timestamp="1606339636750">
+      <screen x="0" y="34" width="1920" height="994" />
+    </state>
+    <state x="540" y="34" width="840" height="992" key="search.everywhere.popup/0.34.1920.994@0.34.1920.994" timestamp="1606339636750" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

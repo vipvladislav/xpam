@@ -28,6 +28,8 @@ class ArticleType extends AbstractType
                 'row_attr' => ['class' => 'zzzzzzz', 'id' => 'qqq'],
             ])
             ->add('content', TextareaType::class, [])
+            ->add('description')
+            ->add('sacraments')
             ->add('image', TextType::class, [])
 //            ->add('field', IntegerType::class, [
 //            'constraints' => [
