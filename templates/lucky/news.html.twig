@@ -138,13 +138,27 @@
                         <div class="ministry_text">
                             <p>{{ article.content }}</p>
                         </div>
-                        <div class="button ministry_button"><a href="{{ url('liturgy_singl', {id: article.id}) }}">Read More</a></div>
+                        <div class="button ministry_button"><a href="{{ url('sermon_singl', {id: article.id}) }}">Read More</a></div>
                     </div>
                 </div>
 
                 {% endfor %}
 
-{#                <!-- Ministry Item -->#}
+                <!-- Pagination -->
+{#                <div style="color: #721c24">#}
+{#                    {{ knp_pagination_render(articles) }}#}
+{#                </div>#}
+                <ul>
+{#                <li class="sermon_title">#}
+                    <li class="pastors_item_title">
+                    <span>
+						{{ knp_pagination_render(articles) }}
+					</span>
+                </li>
+                </ul>
+
+
+                {#                <!-- Ministry Item -->#}
 {#                <div class="col-xl-4 col-md-6">#}
 {#                    <div class="ministry">#}
 {#                        <div class="ministry_image"><img src="{{ asset('images/ministries_2.jpg') }}" alt="https://unsplash.com/@tanjaheffner"></div>#}
@@ -261,21 +275,21 @@
 
                             <!-- Pastors Slider Item -->
                             <div class="owl-item text-center pastors_item">
-                                <div class="pastors_item_image"><img src="{{ asset('images/xpam/silvestr.jpg') }}" alt=""></div>
+                                <div class="pastors_item_image"><img src="{{ asset('images/xpam/e.Silvestr.jpg') }}" alt=""></div>
                                 <div class="pastors_item_title">Архиепископ Сильвестр</div>
                                 <div class="pastors_item_text">Pastor</div>
                             </div>
 
                             <!-- Pastors Slider Item -->
                             <div class="owl-item text-center pastors_item">
-                                <div class="pastors_item_image"><img src="{{ asset('images/xpam/aleks.jpg') }}" alt=""></div>
+                                <div class="pastors_item_image"><img src="{{ asset('images/xpam/o.Alex.jpg') }}" alt=""></div>
                                 <div class="pastors_item_title">прот. Алексей</div>
                                 <div class="pastors_item_text">Pastor</div>
                             </div>
 
                             <!-- Pastors Slider Item -->
                             <div class="owl-item text-center pastors_item">
-                                <div class="pastors_item_image"><img src="{{ asset('images/xpam/vladis.JPG') }}" alt=""></div>
+                                <div class="pastors_item_image"><img src="{{ asset('images/xpam/o.Vlad.jpg') }}" alt=""></div>
                                 <div class="pastors_item_title">прот. Владислав</div>
                                 <div class="pastors_item_text">Pastor</div>
                             </div>

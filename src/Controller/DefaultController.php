@@ -10,6 +10,7 @@ use App\Form\ArticleType;
 use App\Repository\ArticleRepository;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\EntityManagerInterface;
+use Knp\Component\Pager\PaginatorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\HttpFoundation\Request;
@@ -40,25 +41,35 @@ class DefaultController extends AbstractController
     /**
      * @Route("/news", name="news")
      * @param ArticleRepository $articleRepository
+     * @param PaginatorInterface $paginator
+     * @param Request $request
      * @return Response
      */
-    public function news(ArticleRepository $articleRepository)
+    public function news(ArticleRepository $articleRepository, PaginatorInterface $paginator, Request $request)
     {
-        $articles = $articleRepository->findAll();
+//        $articles = $articleRepository->findAll();
+        $queryBuilder = $articleRepository->findArticlesQueryBuilder();
+
+        $articles = $paginator->paginate(
+            $queryBuilder, /* query NOT result */
+            $request->query->getInt('page', 1)/*page number*/,
+            6  /*limit per page*/
+        );
+
         return $this->render('lucky/news.html.twig', [
             'articles' => $articles
         ]);
     }
 
     /**
-     * @Route("/liturgy_singl.html.twig/{id}", name="liturgy_singl")
+     * @Route("/sermon_singl.html.twig/{id}", name="sermon_singl")
      * @param Article $article
      * @return Response
      */
 
-    public function liturgySingle(Article $article)
+    public function sermonSingle(Article $article)
     {
-        return $this->render('lucky/liturgy_singl.html.twig', [
+        return $this->render('lucky/sermon_singl.html.twig', [
             'article' => $article
         ]);
 
@@ -67,7 +78,7 @@ class DefaultController extends AbstractController
 //    {
 //        {
 ////            $result =
-//            $this->render(/** @lang text */ 'lucky/liturgy_singl.html.twig', ['number' => 'id']);
+//            $this->render(/** @lang text */ 'lucky/sermon_singl.html.twig', ['number' => 'id']);
 ////            $this->addFlash('success', 'id');
 //
 //            return $this->redirectToRoute('liturgy_singl', ['id' => $article->getId()]);
@@ -76,12 +87,12 @@ class DefaultController extends AbstractController
 //    }
 
     /**
-     * @Route("/liturgy", name="liturgy")
+     * @Route("/sermon", name="sermon")
      * @return Response
      */
     public function liturgy()
     {
-        return $this->render(/** @lang text */ 'lucky/liturgy.html.twig', []);
+        return $this->render(/** @lang text */ 'lucky/sermon.html.twig', []);
     }
 
     /**
