@@ -22,15 +22,13 @@ class ArticleAdmin extends AbstractAdmin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
+
             ->add('title', TextType::class)
             ->add('content')
             ->add('description')
             ->add('sacraments')
-            ->add('categories')
             ->add('image')
-            ->add('createdAt', null, [
-                'disabled' => true
-            ])
+            ->add('createdAt')
         ;
     }
 
@@ -39,7 +37,12 @@ class ArticleAdmin extends AbstractAdmin
         $datagridMapper
             ->add('id')
             ->add('title')
+            ->add('content')
+            ->add('description')
+            ->add('sacraments')
             ->add('categories')
+            ->add('image')
+            ->add('createdAt')
         ;
     }
 
@@ -47,16 +50,21 @@ class ArticleAdmin extends AbstractAdmin
     {
         $listMapper
             ->addIdentifier ('id')
-            ->add ('title')
+            ->add ('title', null, [
+                'editable' => true,
+            ])
             ->add('content')
             ->add('description')
             ->add('sacraments')
             ->add('categories')
             ->add('image')
             ->add('createdAt')
-
-
-
+            ->add('_action', null, [
+                'actions' => [
+                    'delete' => [],
+                    'edit' => [],
+                ]
+            ])
         ;
     }
 }
