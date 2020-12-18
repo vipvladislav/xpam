@@ -2,22 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7551c35-4f91-479c-ab3e-7e75ff4b6398" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docker/data/mysql/xram/user.frm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/data/mysql/xram/user.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201216045729.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Admin/CategoryAdmin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataFixtures/UserFixture.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Factory/UserFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Security/CAuthenticator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20201218150947.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Admin/UserAdmin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/AdminLoginController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/AdminLoginForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Security/AdminLoginAuthenticator.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/data/mysql/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/ib_buffer_pool" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/data/mysql/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/ib_logfile0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/data/mysql/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/ibdata1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/data/mysql/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/ibtmp1" afterDir="false" />
@@ -26,7 +19,15 @@
       <change beforePath="$PROJECT_DIR$/docker/data/mysql/xram/article.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/xram/article.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/data/mysql/xram/category.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/xram/category.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/data/mysql/xram/doctrine_migration_versions.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/xram/doctrine_migration_versions.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Admin/ArticleAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Admin/ArticleAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/data/mysql/xram/user.frm" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/xram/user.frm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/data/mysql/xram/user.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/xram/user.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Factory/ArticleFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Factory/ArticleFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Factory/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Factory/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Security/CAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/CAuthenticator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +192,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../php_ukraine_symfony_4" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -257,7 +258,11 @@
       <workItem from="1607863597468" duration="13181000" />
       <workItem from="1607965012236" duration="2744000" />
       <workItem from="1608089889570" duration="6696000" />
-      <workItem from="1608102005488" duration="4328000" />
+      <workItem from="1608102005488" duration="4391000" />
+      <workItem from="1608288423942" duration="2977000" />
+      <workItem from="1608291728338" duration="8807000" />
+      <workItem from="1608301999270" duration="3725000" />
+      <workItem from="1608306310154" duration="3335000" />
     </task>
     <task id="LOCAL-00001" summary="symfony 4.4 add docker, public, template">
       <created>1605002019035</created>
@@ -308,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607876001466</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add security and users">
+      <created>1608106951693</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1608106951693</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,7 +335,9 @@
     <MESSAGE value="add ArticleFactory, CategoryFactory, in db: description, sacraments, faker, fixed DefaultController" />
     <MESSAGE value="refactor files, add paginator, function news, add db ADD created_at, ArticleFactory and ArticleRepository" />
     <MESSAGE value="Add sonata admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add sonata admin" />
+    <MESSAGE value="add security and users" />
+    <MESSAGE value="logout, login, password and fixed file" />
+    <option name="LAST_COMMIT_MESSAGE" value="logout, login, password and fixed file" />
   </component>
   <component name="WindowStateProjectService">
     <state x="439" y="110" width="1030" height="855" key="#CLI_Interpreters" timestamp="1605024526947">
@@ -338,50 +352,54 @@
       <screen x="0" y="34" width="1920" height="994" />
     </state>
     <state x="636" y="334" width="637" height="400" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.34.1920.994@0.34.1920.994" timestamp="1605096604481" />
-    <state x="879" y="202" width="498" height="704" key="#com.intellij.ide.util.MemberChooser" timestamp="1607875433548">
+    <state x="879" y="202" width="498" height="704" key="#com.intellij.ide.util.MemberChooser" timestamp="1608307560158">
       <screen x="0" y="34" width="1920" height="994" />
     </state>
-    <state x="879" y="202" width="498" height="704" key="#com.intellij.ide.util.MemberChooser/0.34.1920.994@0.34.1920.994" timestamp="1607875433548" />
-    <state x="151" y="34" width="1598" height="994" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1608102544577">
+    <state x="879" y="202" width="498" height="704" key="#com.intellij.ide.util.MemberChooser/0.34.1920.994@0.34.1920.994" timestamp="1608307560158" />
+    <state x="151" y="34" width="1598" height="994" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1608291618710">
       <screen x="0" y="34" width="1920" height="994" />
     </state>
-    <state x="151" y="34" width="1598" height="994" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.34.1920.994@0.34.1920.994" timestamp="1608102544577" />
-    <state x="627" y="232" width="655" height="605" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607884534778">
+    <state x="151" y="34" width="1598" height="994" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.34.1920.994@0.34.1920.994" timestamp="1608291618710" />
+    <state x="627" y="232" width="655" height="605" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1608306543663">
       <screen x="0" y="34" width="1920" height="994" />
     </state>
-    <state x="627" y="232" width="655" height="605" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.34.1920.994@0.34.1920.994" timestamp="1607884534778" />
-    <state x="513" y="34" width="1096" height="994" key="CommitChangelistDialog2" timestamp="1607875998948">
+    <state x="627" y="232" width="655" height="605" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.34.1920.994@0.34.1920.994" timestamp="1608306543662" />
+    <state x="513" y="34" width="1096" height="994" key="CommitChangelistDialog2" timestamp="1608310746737">
       <screen x="0" y="34" width="1920" height="994" />
     </state>
-    <state x="513" y="34" width="1096" height="994" key="CommitChangelistDialog2/0.34.1920.994@0.34.1920.994" timestamp="1607875998947" />
+    <state x="513" y="34" width="1096" height="994" key="CommitChangelistDialog2/0.34.1920.994@0.34.1920.994" timestamp="1608310746737" />
     <state x="100" y="134" width="1720" height="794" key="DiffContextDialog" timestamp="1608102847883">
       <screen x="0" y="34" width="1920" height="994" />
     </state>
     <state x="100" y="134" width="1720" height="794" key="DiffContextDialog/0.34.1920.994@0.34.1920.994" timestamp="1608102847883" />
-    <state x="1171" y="252" width="530" height="605" key="FileChooserDialogImpl" timestamp="1606557668804">
+    <state x="1171" y="252" width="530" height="605" key="FileChooserDialogImpl" timestamp="1608298700679">
       <screen x="0" y="34" width="1920" height="994" />
     </state>
-    <state x="1171" y="252" width="530" height="605" key="FileChooserDialogImpl/0.34.1920.994@0.34.1920.994" timestamp="1606557668804" />
-    <state x="1113" y="222" width="655" height="665" key="NewPhpClassDialog" timestamp="1607884457432">
+    <state x="1171" y="252" width="530" height="605" key="FileChooserDialogImpl/0.34.1920.994@0.34.1920.994" timestamp="1608298700679" />
+    <state x="1113" y="222" width="655" height="672" key="NewPhpClassDialog" timestamp="1608297883913">
       <screen x="0" y="34" width="1920" height="994" />
     </state>
-    <state x="1113" y="222" width="655" height="665" key="NewPhpClassDialog/0.34.1920.994@0.34.1920.994" timestamp="1607884457432" />
+    <state x="1113" y="222" width="655" height="672" key="NewPhpClassDialog/0.34.1920.994@0.34.1920.994" timestamp="1608297883913" />
     <state x="324" y="78" width="1271" height="912" key="SettingsEditor" timestamp="1605029985756">
       <screen x="0" y="34" width="1920" height="994" />
     </state>
     <state x="324" y="78" width="1271" height="912" key="SettingsEditor/0.34.1920.994@0.34.1920.994" timestamp="1605029985756" />
-    <state x="455" y="204" width="1000" height="661" key="Vcs.Push.Dialog.v2" timestamp="1607876004535">
+    <state x="455" y="204" width="1000" height="661" key="Vcs.Push.Dialog.v2" timestamp="1608106953912">
       <screen x="0" y="34" width="1920" height="994" />
     </state>
-    <state x="455" y="204" width="1000" height="661" key="Vcs.Push.Dialog.v2/0.34.1920.994@0.34.1920.994" timestamp="1607876004535" />
-    <state x="100" y="134" width="1720" height="794" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1608105493390">
+    <state x="455" y="204" width="1000" height="661" key="Vcs.Push.Dialog.v2/0.34.1920.994@0.34.1920.994" timestamp="1608106953912" />
+    <state x="100" y="134" width="1720" height="794" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1608302583715">
       <screen x="0" y="34" width="1920" height="994" />
     </state>
-    <state x="100" y="134" width="1720" height="794" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.34.1920.994@0.34.1920.994" timestamp="1608105493390" />
-    <state x="1153" y="155" width="507" height="873" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1608103151679">
+    <state x="100" y="134" width="1720" height="794" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.34.1920.994@0.34.1920.994" timestamp="1608302583715" />
+    <state x="1153" y="57" width="367" height="971" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1608301516995">
       <screen x="0" y="34" width="1920" height="994" />
     </state>
-    <state x="1153" y="155" width="507" height="873" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.34.1920.994@0.34.1920.994" timestamp="1608103151679" />
+    <state x="1153" y="57" width="367" height="971" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.34.1920.994@0.34.1920.994" timestamp="1608301516995" />
+    <state x="1136" y="135" width="673" height="793" key="dock-window-1" timestamp="1608305045508">
+      <screen x="0" y="34" width="1920" height="994" />
+    </state>
+    <state x="1136" y="135" width="673" height="793" key="dock-window-1/0.34.1920.994@0.34.1920.994" timestamp="1608305045508" />
     <state x="540" y="237" key="run.anything.popup" timestamp="1606337022165">
       <screen x="0" y="34" width="1920" height="994" />
     </state>

@@ -37,7 +37,7 @@ final class ArticleFactory extends ModelFactory
             ),
             'description' => self::faker()->realText(200),
             'sacraments' => self::faker()->paragraph(
-                self::faker()->numberBetween(1, 4)
+                self::faker()->numberBetween(1, 3)
             ),
             'createdAt' => self::faker()->dateTimeBetween('-11 month'),
             'image' => self::faker()->domainName
