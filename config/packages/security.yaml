@@ -14,14 +14,32 @@ security:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
+
+        admin:
+            pattern:            /admin(.*)
+            form_login:
+                #                provider:       users
+                provider: app_user_provider
+                login_path:     admin_login
+                use_forward:    false
+                check_path:     admin_login
+                failure_path:   null
+            logout:
+                path:           admin_logout
+                target:         admin_login
+            anonymous:          true
+            guard:
+                authenticators:
+                    - App\Security\AdminLoginAuthenticator
+
         main:
             anonymous: lazy
             provider: app_user_provider
             guard:
                 authenticators:
                     - App\Security\LoginFormAuthenticator
-                    - App\Security\CAuthenticator
-                entry_point: App\Security\CAuthenticator
+#                    - App\Security\CAuthenticator
+#                entry_point: App\Security\CAuthenticator
             logout:
                 path: app_logout
                 # where to redirect after logout
@@ -39,12 +57,19 @@ security:
             # switch_user: true
 
     role_hierarchy:
-        ROLE_ADMIN:       ROLE_USER
+        ROLE_ADMIN:       [ROLE_USER, ROLE_SONATA_ADMIN]
         ROLE_SUPER_ADMIN: [ROLE_ADMIN, ROLE_ALLOWED_TO_SWITCH]
+        SONATA:
+            - ROLE_SONATA_PAGE_ADMIN_PAGE_EDIT
 
     # Easy way to control access for large sections of your site
     # Note: Only the *first* access control that matches will be used
     access_control:
-#         - { path: ^/admin, roles: ROLE_ADMIN }
 #         - { path: ^/profile, roles: ROLE_USER }
-         - { path: ^/profile, roles: ROLE_USER }
+         - { path: ^/admin/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+         - { path: ^/admin/logout$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+
+        #         - { path: ^/admin, roles: ROLE_ADMIN }
+#         - { path: ^/profile, roles: ROLE_USER }
+         - { path: ^/admin/, role: [ROLE_ADMIN, ROLE_SONATA_ADMIN] }
+         - { path: ^/.*, role: IS_AUTHENTICATED_ANONYMOUSLY }

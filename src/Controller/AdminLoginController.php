@@ -30,7 +30,7 @@ final class AdminLoginController extends AbstractController
             'email' => $this->authenticationUtils->getLastUsername()
         ]);
 
-        return $this->render('security/login.html.twig', [
+        return $this->render('security/admin_login.html.twig', [
             'last_username' => $this->authenticationUtils->getLastUsername(),
             'form' => $form->createView(),
             'error' => $this->authenticationUtils->getLastAuthenticationError(),
